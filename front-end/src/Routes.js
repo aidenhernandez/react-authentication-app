@@ -6,6 +6,7 @@ import { PleaseVerifyEmailPage } from './pages/PleaseVerifyEmailPage';
 import { PrivateRoute } from './auth/PrivateRoute';
 import { EmailVerificationLandingPage } from './pages/EmailVerificationLandingPage';
 import { ForgotPasswordPage } from './pages/ForgotPasswordPage';
+import { PasswordResetLandingPage } from './pages/PasswordResetLandingPage';
 
 
 export const Routes = () => {
@@ -23,6 +24,9 @@ export const Routes = () => {
 				</Route>
 				<Route path="/login">
 					<LogInPage />
+				</Route>
+				<Route path="/reset-password/:passwordResetCode">
+					<PasswordResetLandingPage />
 				</Route>
 				<Route path="/please-verify">
 					<PleaseVerifyEmailPage />
